@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url(https://thumbs.dreamstime.com/b/soft-lavender-blue-blended-texture-no-people-empty-peaceful-color-social-media-tile-swatch-subtle-blend-trend-peri-purple-237087201.jpg);
+  background-size: cover;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+.our-pricing {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 1;
+}
+.billing {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  flex-shrink: 1;
+}
+.annually {
+}
+.monthly {
+}
+.plans {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  flex-shrink: 1;
+}
+.plan {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 220px;
+  height: 370px;
+  border-radius: 5%;
+  margin: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1), -5px -5px 10px 1px rgba(0, 0, 0, 0.1);
+}
+.plan-type {
+  display: flex;
+  justify-content: center;
+}
+.plan-price {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px;
+}
+.feature {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid lavender;
+  border-bottom: 1px solid lavender;
+}
+.learn {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.button {
+  background-color: rgb(164, 106, 234);
+  color: white;
+  background-image: linear-gradient(to top left, rgb(107, 107, 249), rgb(178, 178, 239));
+}
+.plan:hover{
+  background-color: rgb(112, 112, 252);
+  background-image: linear-gradient(to bottom left, rgb(107, 107, 249), rgb(178, 178, 239));
+  color: white;
+  transform: scale(1.15);
+}
+.plan:hover .button{
+  background-image: none;
+  background-color: white;
+  color: rgb(107, 107, 249);
+}
+@media all and (max-width: 700px) {
+  .plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
